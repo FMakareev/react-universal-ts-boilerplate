@@ -1,0 +1,25 @@
+type User {
+  phone: String
+  email: String
+  name: String
+}
+input UserInput  {
+  phone: String
+  email: String
+  name: String
+}
+
+type Feedback {
+  id: ID,
+  user: User,
+  message: String,
+}
+
+type Query {
+  feedbackItem(id: String!): Feedback,
+  feedbackList: [Feedback]
+}
+
+type Mutation {
+  createFeedback(user: UserInput, message: String!): Feedback,
+}

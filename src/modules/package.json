@@ -1,0 +1,8 @@
+{
+  "name": "modules",
+  "version": "0.0.1",
+  "main": "index.tsx",
+  "devDependencies": {
+    "@types/faker": "^4.1.5"
+  }
+}

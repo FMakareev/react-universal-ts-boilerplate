@@ -1,0 +1,51 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "allowJs": true,
+    "lib": [
+      "es2017",
+      "dom",
+      "esnext"
+    ],
+    "skipLibCheck": false,
+    "esModuleInterop": false,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "isolatedModules": false,
+    "noEmit": true,
+    "jsx": "react",
+    "baseUrl": "./",
+    "pretty": true,
+    "sourceMap": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "removeComments": false,
+    "outDir": "public",
+    "allowUnusedLabels": false,
+    "noImplicitReturns": true,
+    "noUnusedParameters": true,
+    "noUnusedLocals": true,
+    "resolveJsonModule": true,
+    "typeRoots": [
+      "src/index.d.ts",
+      "node_modules/@types"
+    ],
+    "types": [
+      "@types/styled-components"
+    ]
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  "include": [
+    "src",
+    "node_modules\@types\node\globals.d.ts",
+    "node_modules\@types\webpack-env\index.d.ts"
+  ],
+  "awesomeTypescriptLoaderOptions": {
+    "useCache": true
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "ssr": {
+    "start:ssr:prod": {
+      "NODE_ENV": "production",
+      "watch": true,
+      "hmr": true,
+      "ssrFetch": true,
+      "server_entry": "./src/server/index.tsx",
+      "client_entry": "./src/client/index.tsx",
+      "output": "dist",
+      "endpointServer": "'http://localhost:5001'",
+      "endpointClient": "'http://localhost:5001'",
+      "port": 3000,
+      "defaultLocale": "'en'",
+      "analyzer": false,
+      "apolloFaker": false
+    },
+    "start:ssr:dev":  {
+      "NODE_ENV": "development",
+      "watch": true,
+      "hmr": true,
+      "ssrFetch": true,
+      "server_entry": "./src/server/index.tsx",
+      "client_entry": "./src/client/index.tsx",
+      "output": "dist",
+      "endpointServer": "'http://localhost:5001'",
+      "endpointClient": "'http://localhost:5001'",
+      "port": 3001,
+      "defaultLocale": "'en'",
+      "analyzer": false,
+      "apolloFaker": true
+    },
+    "build:ssr:prod": {
+      "NODE_ENV": "production",
+      "watch": false,
+      "hmr": false,
+      "ssrFetch": true,
+      "server_entry": "./src/server/index.tsx",
+      "client_entry": "./src/client/index.tsx",
+      "output": "dist",
+      "endpointServer": "'http://localhost:5001'",
+      "endpointClient": "'http://localhost:5001'",
+      "port": 3000,
+      "defaultLocale": "'en'",
+      "analyzer": true,
+      "apolloFaker": true
+    },
+    "build:ssr:dev": {
+      "NODE_ENV": "development",
+      "watch": false,
+      "hmr": false,
+      "ssrFetch": true,
+      "server_entry": "./src/server/index.tsx",
+      "client_entry": "./src/client/index.tsx",
+      "output": "dist",
+      "endpointServer": "'http://localhost:5001'",
+      "endpointClient": "'http://localhost:5001'",
+      "port": 3000,
+      "defaultLocale": "'en'",
+      "analyzer": true,
+      "apolloFaker": false
+    },
+    "start:ssr:server": {
+      "port": 3000,
+      "public": "dist",
+      "defaultLocale": "'en'"
+    }
+  },
+  "csr": {
+    "start:csr:prod":{
+      "NODE_ENV": "production",
+      "hmr": true,
+      "watch": true,
+      "client_entry": "./src/client/index.tsx",
+      "port": 3000,
+      "defaultLocale": "'en'",
+      "analyzer": false,
+      "apolloFaker": true
+    },
+    "start:csr:dev":{
+      "NODE_ENV": "development",
+      "hmr": true,
+      "watch": true,
+      "client_entry": "./src/client/index.tsx",
+      "port": 3000,
+      "defaultLocale": "'en'",
+      "analyzer": false,
+      "apolloFaker": true
+    },
+    "build:csr:prod":{
+      "NODE_ENV": "production",
+      "watch": false,
+      "hmr": false,
+      "client_entry": "./src/client/index.tsx",
+      "output": "dist",
+      "port": 3000,
+      "defaultLocale": "'en'",
+      "analyzer": true,
+      "apolloFaker": false
+    },
+    "build:csr:dev":{
+      "NODE_ENV": "development",
+      "watch": false,
+      "hmr": false,
+      "client_entry": "./src/client/index.tsx",
+      "output": "dist",
+      "port": 3000,
+      "defaultLocale": "'en'",
+      "analyzer": true,
+      "apolloFaker": false
+    },
+    "start:csr:server": {
+      "port": 3005,
+      "public": "dist",
+      "defaultLocale": "'en'"
+    }
+  }
+}
